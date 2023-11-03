@@ -1,6 +1,8 @@
 using System;
 
 class Program {
+  
+  //Ações do jogador e do inimigo
   public int AtaqueEnemy(ref int vidaPlayer){
     var rand = new Random();
     int danoAtaque = rand.Next(1,7);
@@ -53,13 +55,14 @@ class Program {
   }
   
   public static void Main (string[] args) {
+
     Program combate = new Program();
     int vidaEnemy, vidaPlayer, opcao;
     vidaEnemy = 20;
     vidaPlayer = 15;
     opcao = 0;
     
-
+    // Início de combate
     while (vidaEnemy > 0 && vidaPlayer > 0  && opcao != 4){
       Console.WriteLine("O inimigo tem {0} de vida e você tem {1}", vidaEnemy, vidaPlayer);
       Console.WriteLine("Atacar - 1, Fogo - 2, Cura - 3 ou Fugir - 4");
@@ -68,33 +71,17 @@ class Program {
         
       if (opcao == 1 && vidaPlayer > 0){
           combate.AtaquePlayer(ref vidaEnemy);
-      }
-      if (opcao == 2 && vidaPlayer > 0){
+      } else if (opcao == 2 && vidaPlayer > 0){
           combate.FogoAtaque(ref vidaEnemy);
-      }
-      if (opcao == 3 && vidaPlayer > 0){
+      } else if (opcao == 3 && vidaPlayer > 0){
           combate.CuraPlayer(ref vidaPlayer);
-      }
-      if (opcao == 4 && vidaPlayer > 0){
+      } else if (opcao == 4 && vidaPlayer > 0){
           Console.WriteLine("Você fugiu da batalha!");
       }
     } 
-    
+
+    // Fim de batalha
     Console.WriteLine("A batalha terminou.");
-
-    //Antes estava um amontoado de else if como no exemplo abaixo
-    
-          /*
-          } else if (vidaEnemy > 0 && opcao == 2) {
-              combate.FogoAtaque(ref vidaEnemy);
-          } else if (vidaEnemy > 0 && opcao == 3) {
-              combate.CuraPlayer(ref vidaPlayer);
-          } else if (vidaEnemy > 0 && opcao == 4){
-              Console.WriteLine("Você fugiu da batalha!");
-          }
-          */
-
-    //Preferi só com if, achei que fica mais limpa a visualização do código
           
   }
 }

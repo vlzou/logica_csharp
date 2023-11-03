@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/8n7TyNiwc8V10Kt61WUyWoSXYsnnw+wzIayiJyCTsf2wpP8bwQkMQt++CL58gSIuphcYDoNFlf5qJrNzzYtIA==",
+  "dgSpecHash": "G0yW+dqy6SKAMiwWvK/sdqbbxoz12iDepE/vBar96Lw2uIevoaa14ssfUjD1kpy7XfJqAPxPNzpIRFeVsBkdYQ==",
   "success": true,
-  "projectFilePath": "/home/runner/rolagemdeDados/main.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\logica_csharp\\main.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lazuo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\lazuo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\lazuo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\lazuo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+  ],
   "logs": []
 }
