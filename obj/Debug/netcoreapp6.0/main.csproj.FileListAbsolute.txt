@@ -43,3 +43,17 @@
 /home/runner/rolagemdeDados/obj/Debug/netcoreapp6.0/main.pdb
 /home/runner/rolagemdeDados/obj/Debug/netcoreapp6.0/main.genruntimeconfig.cache
 /home/runner/rolagemdeDados/obj/Debug/netcoreapp6.0/ref/main.dll
+D:\logica_csharp\bin\Debug\netcoreapp6.0\main.exe
+D:\logica_csharp\bin\Debug\netcoreapp6.0\main.deps.json
+D:\logica_csharp\bin\Debug\netcoreapp6.0\main.runtimeconfig.json
+D:\logica_csharp\bin\Debug\netcoreapp6.0\main.dll
+D:\logica_csharp\bin\Debug\netcoreapp6.0\main.pdb
+D:\logica_csharp\obj\Debug\netcoreapp6.0\main.GeneratedMSBuildEditorConfig.editorconfig
+D:\logica_csharp\obj\Debug\netcoreapp6.0\main.AssemblyInfoInputs.cache
+D:\logica_csharp\obj\Debug\netcoreapp6.0\main.AssemblyInfo.cs
+D:\logica_csharp\obj\Debug\netcoreapp6.0\main.csproj.CoreCompileInputs.cache
+D:\logica_csharp\obj\Debug\netcoreapp6.0\main.dll
+D:\logica_csharp\obj\Debug\netcoreapp6.0\refint\main.dll
+D:\logica_csharp\obj\Debug\netcoreapp6.0\main.pdb
+D:\logica_csharp\obj\Debug\netcoreapp6.0\main.genruntimeconfig.cache
+D:\logica_csharp\obj\Debug\netcoreapp6.0\ref\main.dll

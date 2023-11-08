@@ -2,8 +2,8 @@ using System;
 
 class Program {
   
-  //Ações do jogador e do inimigo
-  public int AtaqueEnemy(ref int vidaPlayer){
+  //Funções para as ações do jogador e do inimigo
+  public static int AtaqueEnemy(ref int vidaPlayer){
     var rand = new Random();
     int danoAtaque = rand.Next(1,7);
     
@@ -17,7 +17,7 @@ class Program {
     return vidaPlayer;
   }
   
-  public int AtaquePlayer(ref int vidaEnemy){
+  public static int AtaquePlayer(ref int vidaEnemy){
     var rand = new Random();
     int danoAtaque = rand.Next(1,7);
     
@@ -30,7 +30,7 @@ class Program {
     }
     return vidaEnemy;
   }
-  public int CuraPlayer(ref int vidaPlayer){
+  public static int CuraPlayer(ref int vidaPlayer){
     var rand = new Random();
     int curaTotal = rand.Next(7, 12);
     
@@ -40,7 +40,7 @@ class Program {
     return vidaPlayer;
   }
 
-  public int FogoAtaque(ref int vidaEnemy){
+  public static int FogoAtaque(ref int vidaEnemy){
     var rand = new Random();
     int danoFogo = rand.Next(5, 10);
     
@@ -53,10 +53,9 @@ class Program {
     return vidaEnemy;
 
   }
-  
+  // Fim das funções
   public static void Main (string[] args) {
-
-    Program combate = new Program();
+    
     int vidaEnemy, vidaPlayer, opcao;
     vidaEnemy = 20;
     vidaPlayer = 15;
@@ -67,14 +66,14 @@ class Program {
       Console.WriteLine("O inimigo tem {0} de vida e você tem {1}", vidaEnemy, vidaPlayer);
       Console.WriteLine("Atacar - 1, Fogo - 2, Cura - 3 ou Fugir - 4");
       opcao = int.Parse(Console.ReadLine());
-      combate.AtaqueEnemy(ref vidaPlayer);
+      AtaqueEnemy(ref vidaPlayer);
         
       if (opcao == 1 && vidaPlayer > 0){
-          combate.AtaquePlayer(ref vidaEnemy);
+          AtaquePlayer(ref vidaEnemy);
       } else if (opcao == 2 && vidaPlayer > 0){
-          combate.FogoAtaque(ref vidaEnemy);
+          FogoAtaque(ref vidaEnemy);
       } else if (opcao == 3 && vidaPlayer > 0){
-          combate.CuraPlayer(ref vidaPlayer);
+          CuraPlayer(ref vidaPlayer);
       } else if (opcao == 4 && vidaPlayer > 0){
           Console.WriteLine("Você fugiu da batalha!");
       }
